@@ -23,7 +23,8 @@
 
 @media (max-width: 768px) {
 
-  .info { text-align: center;
+  .info {
+    text-align: center;
   }
 
 }
@@ -44,16 +45,19 @@
   display: flex;
 }
 
-.incomplete-tasks, .completed-tasks {
+.incomplete-tasks,
+.completed-tasks {
   margin: 0;
   padding: 0px;
 }
 
-.main__edit, .main__title {
+.main__edit,
+.main__title {
   list-style: none;
 }
 
-input,button{ /* сброс дефолтных стилей, правило 3.4. Теговые селекторы*/
+input,
+button { /* сброс дефолтных стилей, правило 3.4. Теговые селекторы*/
   outline: none;
 }
 
@@ -118,7 +122,6 @@ input,button{ /* сброс дефолтных стилей, правило 3.4.
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
