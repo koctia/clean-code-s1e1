@@ -21,7 +21,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .info { text-align: center;
   }
@@ -45,16 +45,16 @@
 }
 
 .incomplete-tasks, .completed-tasks {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .main__edit, .main__title {
-  list-style:none;
+  list-style: none;
 }
 
 input,button{ /* сброс дефолтных стилей, правило 3.4. Теговые селекторы*/
-  outline:none;
+  outline: none;
 }
 
 .button {
@@ -167,10 +167,10 @@ input,button{ /* сброс дефолтных стилей, правило 3.4.
 }
 
 .edit-mode .input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .edit-mode .label {
-  display:none;
+  display: none;
 }
