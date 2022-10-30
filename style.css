@@ -6,24 +6,25 @@
   font-family: Lato, sans-serif;
 }
 
-.info {
+.header__info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.img-info {
+.header__img-info {
   width: 100%;
 }
 
-.info .more-info {
-  font-family: fantasy, cursive;
+.header__more-info {
+  font-family: 'Indie Flower', cursive;
+  font-size: 22px;
 }
 
 @media (max-width: 768px) {
 
-  .info {
+  .header__info {
     text-align: center;
   }
 
@@ -35,19 +36,21 @@
   margin: 0 auto 0;
 }
 
-.task {
+.adding__input-task,
+.main__label-task,
+.main__input-task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.adding-box {
+.adding__add-box {
   display: flex;
   padding: 20px 0;
 }
 
-.incomplete-tasks,
-.completed-tasks {
+.main__incomplete-tasks,
+.main__completed-tasks {
   margin: 0;
   padding: 0px;
 }
@@ -62,7 +65,9 @@ button { /* сброс дефолтных стилей, правило 3.4. Те
   outline: none;
 }
 
-.button {
+.adding__btn-add,
+.main__btn-edit,
+.main__btn-delete {
   background: none;
   border: 0px;
   color: #888;
@@ -72,14 +77,16 @@ button { /* сброс дефолтных стилей, правило 3.4. Те
   cursor: pointer;
 }
 
-.button:hover {
+.adding__btn-add,
+.main__btn-edit:hover,
+.main__btn-delete:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
 
 .main__title,
-.main__new-task[for="new-task"] {
+.adding__label-task[for="new-task"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -89,7 +96,8 @@ button { /* сброс дефолтных стилей, правило 3.4. Те
   text-transform: uppercase;
 }
 
-.input[type="text"] {
+.adding__input-task,
+.main__input-task {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -102,13 +110,14 @@ button { /* сброс дефолтных стилей, правило 3.4. Те
   color: #888;
 }
 
-.input[type="text"]:focus {
+.adding__input-task:focus,
+.main__input-task:focus {
   color: #333;
 }
 
 /* New Task */
 
-.main__new-task {
+.adding__label-task {
   display: block;
   margin: 0 0 20px;
 }
@@ -136,6 +145,7 @@ button { /* сброс дефолтных стилей, правило 3.4. Те
   margin: 0 10px;
 }
 
+.main__label-task,
 .label {
   padding-left: 10px;
   box-sizing: border-box;
@@ -143,38 +153,39 @@ button { /* сброс дефолтных стилей, правило 3.4. Те
   width: 226px;
 }
 
-.input[type="text"] {
+.adding__input-task,
+.main__input-task {
   width: 226px;
 }
 
-.remove-img {
+.main__remove-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.remove-img:hover {
+.main__remove-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
 
-#completed-tasks .decor {
+#completed-tasks .main__label-task_decor {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.main__edit .input {
+.main__edit .main__input-task {
   display: none;
 }
 
-.edit-mode .input {
+.main__edit-mode .main__input-task {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .label {
+.main__edit-mode .main__label-task {
   display: none;
 }
