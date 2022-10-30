@@ -43,6 +43,7 @@
 
 .adding-box {
   display: flex;
+  padding: 20px 0;
 }
 
 .incomplete-tasks,
