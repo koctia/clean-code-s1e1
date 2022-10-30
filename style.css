@@ -1,49 +1,62 @@
 /* Basic Style */
+
 .body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .info {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .img-info {
   width: 100%;
 }
+
 .info .more-info {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
+
   .info { text-align: center;
   }
+
 }
+
 .main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .adding-box {
   display: flex;
 }
+
 .incomplete-tasks, .completed-tasks {
   margin:0;
   padding: 0px;
 }
+
 .main__edit, .main__title {
   list-style:none;
 }
+
 input,button{ /* сброс дефолтных стилей, правило 3.4. Теговые селекторы*/
   outline:none;
 }
+
 .button {
   background: none;
   border: 0px;
@@ -53,10 +66,13 @@ input,button{ /* сброс дефолтных стилей, правило 3.4.
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .main__title,
 .main__new-task[for="new-task"] {
   color: #333;
@@ -67,6 +83,7 @@ input,button{ /* сброс дефолтных стилей, правило 3.4.
   margin: 0;
   text-transform: uppercase;
 }
+
 .input[type="text"] {
   margin: 0;
   font-size: 18px;
@@ -79,20 +96,24 @@ input,button{ /* сброс дефолтных стилей, правило 3.4.
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .input[type="text"]:focus {
   color: #333;
 }
 
 /* New Task */
+
 .main__new-task {
   display: block;
   margin: 0 0 20px;
 }
+
 #new-task {
   width: 318px;
 }
 
 /* Task list */
+
 .main__edit {
   overflow: hidden;
   padding: 20px 0;
@@ -102,6 +123,7 @@ input,button{ /* сброс дефолтных стилей, правило 3.4.
   justify-content: space-between;
   align-items: center;
 }
+
 .main__edit > * {
   vertical-align: middle;
 }
@@ -109,31 +131,37 @@ input,button{ /* сброс дефолтных стилей, правило 3.4.
 .main__checkbox {
   margin: 0 10px;
 }
+
 .label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .input[type="text"] {
   width: 226px
 }
+
 .remove-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .remove-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
+
 #completed-tasks .decor {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
+
 .main__edit .input {
   display: none;
 }
