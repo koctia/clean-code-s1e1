@@ -1,0 +1,14 @@
+**clean-code-s1e1**
+
+https://github.com/rolling-scopes-school/tasks/blob/master/stage1/modules/clean-code/clean-code-s1e1.md
+
+**Требования к именам коммитов**
+init: - используется для начала проекта/таска
+feat: - это реализованная новая функциональность из технического задания
+fix: - исправил ошибку в ранее реализованной функциональности
+refactor: - рефакторинг, что-то где-то поменял
+docs: - используется при работе с документацией/readme проекта
+
+
+fix: add Html5 DOCTYPE tag according to rule 2.2 in html-and-css.md
+refactor: adjust HTML-formatting according to rule 2.1 in html-and-css.md
